@@ -92,7 +92,7 @@ Location transformFromGCJToWGS(Location gcLoc)
         currGcLoc = transformFromWGSToGCJ(wgLoc);
         dLoc.lat = gcLoc.lat - currGcLoc.lat;
         dLoc.lng = gcLoc.lng - currGcLoc.lng;
-        if (fabs(dLoc.lat) < 1e-7 || fabs(dLoc.lng) < 1e-7) {  // 1e-7 ~ centimeter level accuracy
+        if (fabs(dLoc.lat) < 1e-7 && fabs(dLoc.lng) < 1e-7) {  // 1e-7 ~ centimeter level accuracy
           // Result of experiment:
           //   Most of the time 2 iterations would be enough for an 1e-8 accuracy (milimeter level).
           //
