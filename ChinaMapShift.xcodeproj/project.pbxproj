@@ -9,13 +9,11 @@
 /* Begin PBXBuildFile section */
 		2A01916E182DE102005387C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A01916D182DE102005387C6 /* Foundation.framework */; };
 		2A019173182DE102005387C6 /* ChinaMapShift.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A019172182DE102005387C6 /* ChinaMapShift.h */; };
-		2A019175182DE102005387C6 /* ChinaMapShift.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A019174182DE102005387C6 /* ChinaMapShift.m */; };
+		2A019175182DE102005387C6 /* ChinaMapShift.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A019174182DE102005387C6 /* ChinaMapShift.mm */; };
 		2A01917C182DE102005387C6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A01917B182DE102005387C6 /* XCTest.framework */; };
 		2A01917D182DE102005387C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A01916D182DE102005387C6 /* Foundation.framework */; };
 		2A01917F182DE102005387C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A01917E182DE102005387C6 /* UIKit.framework */; };
 		2A019182182DE102005387C6 /* libChinaMapShift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A01916A182DE102005387C6 /* libChinaMapShift.a */; };
-		2A019188182DE102005387C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A019186182DE102005387C6 /* InfoPlist.strings */; };
-		2A01918A182DE102005387C6 /* ChinaMapShiftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A019189182DE102005387C6 /* ChinaMapShiftTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +44,10 @@
 		2A01916D182DE102005387C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2A019171182DE102005387C6 /* ChinaMapShift-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChinaMapShift-Prefix.pch"; sourceTree = "<group>"; };
 		2A019172182DE102005387C6 /* ChinaMapShift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChinaMapShift.h; sourceTree = "<group>"; };
-		2A019174182DE102005387C6 /* ChinaMapShift.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChinaMapShift.m; sourceTree = "<group>"; };
+		2A019174182DE102005387C6 /* ChinaMapShift.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ChinaMapShift.mm; sourceTree = "<group>"; };
 		2A01917A182DE102005387C6 /* ChinaMapShiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChinaMapShiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A01917B182DE102005387C6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2A01917E182DE102005387C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		2A019185182DE102005387C6 /* ChinaMapShiftTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChinaMapShiftTests-Info.plist"; sourceTree = "<group>"; };
-		2A019187182DE102005387C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2A019189182DE102005387C6 /* ChinaMapShiftTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChinaMapShiftTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				2A01916F182DE102005387C6 /* ChinaMapShift */,
-				2A019183182DE102005387C6 /* ChinaMapShiftTests */,
 				2A01916C182DE102005387C6 /* Frameworks */,
 				2A01916B182DE102005387C6 /* Products */,
 			);
@@ -111,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				2A019172182DE102005387C6 /* ChinaMapShift.h */,
-				2A019174182DE102005387C6 /* ChinaMapShift.m */,
+				2A019174182DE102005387C6 /* ChinaMapShift.mm */,
 				2A019170182DE102005387C6 /* Supporting Files */,
 			);
 			path = ChinaMapShift;
@@ -121,24 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				2A019171182DE102005387C6 /* ChinaMapShift-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2A019183182DE102005387C6 /* ChinaMapShiftTests */ = {
-			isa = PBXGroup;
-			children = (
-				2A019189182DE102005387C6 /* ChinaMapShiftTests.m */,
-				2A019184182DE102005387C6 /* Supporting Files */,
-			);
-			path = ChinaMapShiftTests;
-			sourceTree = "<group>";
-		};
-		2A019184182DE102005387C6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2A019185182DE102005387C6 /* ChinaMapShiftTests-Info.plist */,
-				2A019186182DE102005387C6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -213,7 +189,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A019188182DE102005387C6 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A019175182DE102005387C6 /* ChinaMapShift.m in Sources */,
+				2A019175182DE102005387C6 /* ChinaMapShift.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +207,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A01918A182DE102005387C6 /* ChinaMapShiftTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,17 +219,6 @@
 			targetProxy = 2A019180182DE102005387C6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2A019186182DE102005387C6 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A019187182DE102005387C6 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2A01918B182DE102005387C6 /* Debug */ = {
@@ -409,6 +372,7 @@
 				2A01918F182DE102005387C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A019190182DE102005387C6 /* Build configuration list for PBXNativeTarget "ChinaMapShiftTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +381,7 @@
 				2A019192182DE102005387C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
